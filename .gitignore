@@ -5,14 +5,12 @@ node_modules
 # Build outputs
 dist
 build
-.next
 out
 
 # Turborepo
 .turbo
 
 # Environment
-.env
 .env.local
 .env.*.local
 
