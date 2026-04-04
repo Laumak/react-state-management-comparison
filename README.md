@@ -53,6 +53,30 @@ the todo list reflects a real-world pattern.
 
 ---
 
+## Delivery Plan (PRs & Phases)
+
+### PR #1 — Monorepo Foundation (current)
+
+- Set up pnpm + Turborepo workspace structure
+- Add initial apps and shared packages scaffolding
+- Set up base TypeScript and workspace scripts
+- Configure oxfmt formatting (including Markdown)
+- Document project goals, structure, and workflows
+
+### Phase 1 — State Management Comparison
+
+- Build the same Todo + Pokédex scenarios in each state management app
+- Keep feature parity across apps so comparisons are fair
+- Share common UI and API helpers from `packages/ui` and `packages/mock-api`
+
+### Phase 2 — GraphQL Client Comparison (future)
+
+- Compare Apollo Client vs URQL on the same Pokémon domain
+- Keep Phase 2 apps isolated from Phase 1 apps in `apps/`
+- Reuse the same comparison style and scenario parity principles
+
+---
+
 ## Folder Structure
 
 ```
