@@ -1,0 +1,19 @@
+{
+  "name": "react-state-management-comparison",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check ."
+  },
+  "devDependencies": {
+    "oxfmt": "0.43.0",
+    "turbo": "2.9.3",
+    "typescript": "6.0.2"
+  },
+  "packageManager": "pnpm@9.15.9"
+}

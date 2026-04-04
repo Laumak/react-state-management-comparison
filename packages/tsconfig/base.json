@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // Compile to ES2020 syntax — supported by all modern browsers and Node 14+
+    "target": "ES2020",
+    // Emit ES module syntax (import/export); lets bundlers tree-shake effectively
+    "module": "ESNext",
+    // Let the bundler (Vite / esbuild) resolve modules — avoids Node.js-specific quirks
+    "moduleResolution": "bundler",
+    // Include ES2020 built-ins + browser DOM types; required for React apps in the browser
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    // Enable the full suite of strict type-checking rules
+    "strict": true,
+    // Allow default imports from CommonJS packages (e.g. `import React from 'react'`)
+    "esModuleInterop": true,
+    // Skip type-checking declaration files in node_modules for faster builds
+    "skipLibCheck": true,
+    // Prevent subtle bugs on case-insensitive file systems (macOS / Windows)
+    "forceConsistentCasingInFileNames": true,
+    // Allow importing .json files as typed modules
+    "resolveJsonModule": true,
+    // Required by bundlers that transpile each file in isolation (esbuild, swc, Babel)
+    "isolatedModules": true,
+    // Don't emit JavaScript files; the bundler is responsible for that
+    "noEmit": true
+  }
+}

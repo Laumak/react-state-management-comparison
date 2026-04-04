@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+dist
+
+# Turborepo
+.turbo
+
+# Logs
+*.log*
+
+# Editor / OS
+.DS_Store
+.vscode/settings.json
+
+# TypeScript
+*.tsbuildinfo
