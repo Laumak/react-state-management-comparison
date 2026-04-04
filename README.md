@@ -12,6 +12,8 @@ flux architecture to atomic libraries like Jotai, to server-state specialists li
 This project lets you explore the trade-offs between them by building identical features in each
 one.
 
+Roadmap details are tracked in [`ROADMAP.md`](./ROADMAP.md).
+
 **Libraries compared (Phase 1):**
 
 | App                        | Library                                        | Paradigm              |
