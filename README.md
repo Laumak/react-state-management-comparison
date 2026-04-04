@@ -10,13 +10,13 @@ React's ecosystem offers a wide variety of state management approaches — from 
 
 **Libraries compared (Phase 1):**
 
-| App | Library | Paradigm |
-|-----|---------|----------|
-| `apps/with-redux-toolkit` | [Redux Toolkit](https://redux-toolkit.js.org/) | Flux / unidirectional |
-| `apps/with-zustand` | [Zustand](https://zustand-demo.pmnd.rs/) | Minimal store |
-| `apps/with-jotai` | [Jotai](https://jotai.org/) | Atomic / bottom-up |
-| `apps/with-xstate` | [XState](https://xstate.js.org/) | State machines |
-| `apps/with-tanstack-query` | [TanStack Query](https://tanstack.com/query) | Server state |
+| App                        | Library                                        | Paradigm              |
+| -------------------------- | ---------------------------------------------- | --------------------- |
+| `apps/with-redux-toolkit`  | [Redux Toolkit](https://redux-toolkit.js.org/) | Flux / unidirectional |
+| `apps/with-zustand`        | [Zustand](https://zustand-demo.pmnd.rs/)       | Minimal store         |
+| `apps/with-jotai`          | [Jotai](https://jotai.org/)                    | Atomic / bottom-up    |
+| `apps/with-xstate`         | [XState](https://xstate.js.org/)               | State machines        |
+| `apps/with-tanstack-query` | [TanStack Query](https://tanstack.com/query)   | Server state          |
 
 ---
 
@@ -38,10 +38,10 @@ A classic to-do list app covering:
 
 Data fetched from the [PokéAPI](https://pokeapi.co/):
 
-| Feature | Endpoint |
-|---------|----------|
-| List view | `GET /pokemon?limit=20` |
-| Single item | `GET /pokemon/{id}` |
+| Feature     | Endpoint                |
+| ----------- | ----------------------- |
+| List view   | `GET /pokemon?limit=20` |
+| Single item | `GET /pokemon/{id}`     |
 
 This exercises loading/error states, caching behaviour, and how each library handles async data fetching. TanStack Query in particular shines here — and pairing it with a client-state library for the todo list reflects a real-world pattern.
 
@@ -68,11 +68,11 @@ This exercises loading/error states, caching behaviour, and how each library han
 
 ### Package Descriptions
 
-| Package | Description |
-|---------|-------------|
-| `packages/ui` | Shared, unstyled (or lightly styled) React components used by all apps — e.g. `TodoItem`, `PokemonCard`, layout primitives |
+| Package             | Description                                                                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `packages/ui`       | Shared, unstyled (or lightly styled) React components used by all apps — e.g. `TodoItem`, `PokemonCard`, layout primitives                  |
 | `packages/mock-api` | Typed fetch helpers for the real [PokéAPI](https://pokeapi.co/) REST endpoints, plus shared TypeScript interfaces (`Pokemon`, `Todo`, etc.) |
-| `packages/tsconfig` | Shared `tsconfig` base files (`base.json`, `react.json`) extended by every app and package |
+| `packages/tsconfig` | Shared `tsconfig` base files (`base.json`, `react.json`) extended by every app and package                                                  |
 
 ---
 

@@ -4,10 +4,10 @@ Shared TypeScript configuration files extended by every app and package in this 
 
 ## Files
 
-| File | Purpose |
-|------|---------|
-| `base.json` | Base `tsconfig` suitable for any Node.js or browser TypeScript package |
-| `react.json` | Extends `base.json`, adds React/JSX transform settings |
+| File         | Purpose                                                                |
+| ------------ | ---------------------------------------------------------------------- |
+| `base.json`  | Base `tsconfig` suitable for any Node.js or browser TypeScript package |
+| `react.json` | Extends `base.json`, adds React/JSX transform settings                 |
 
 ## Usage
 

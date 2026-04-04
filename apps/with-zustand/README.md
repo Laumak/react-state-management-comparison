@@ -7,12 +7,15 @@ Zustand is a small, fast, and scalable state management library. It uses simplif
 ## Scenarios
 
 ### Local State — Todo List
+
 A classic to-do list (add, complete, delete, filter todos) using a Zustand store.
 
 ### Async / Server State — PokéAPI
+
 Fetching Pokémon data from the [PokéAPI](https://pokeapi.co/) with async actions inside the Zustand store, combined with loading/error state tracked alongside the data.
 
 ## Key concepts explored
+
 - Creating a store with `create`
 - Async actions inside a store
 - Derived/computed values via selectors

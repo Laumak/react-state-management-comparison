@@ -7,12 +7,15 @@ XState models application logic as explicit finite state machines (FSMs) and sta
 ## Scenarios
 
 ### Local State — Todo List
+
 A classic to-do list (add, complete, delete, filter todos) modelled as an XState machine with states like `idle`, and events like `ADD_TODO`, `TOGGLE_TODO`, `DELETE_TODO`.
 
 ### Async / Server State — PokéAPI
+
 Fetching Pokémon data from the [PokéAPI](https://pokeapi.co/) using an XState machine with explicit `loading`, `success`, and `failure` states and `invoke`d promises.
 
 ## Key concepts explored
+
 - Finite state machines and statecharts
 - Invoked promises for async flows
 - Guards, actions, and context

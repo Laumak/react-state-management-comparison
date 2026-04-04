@@ -13,13 +13,13 @@ A **pnpm + Turborepo monorepo** that compares popular React state management lib
 
 ### Phase 1 — State Management Comparison
 
-| App | Library | Paradigm |
-|-----|---------|----------|
-| `apps/with-redux-toolkit` | Redux Toolkit | Flux / unidirectional |
-| `apps/with-zustand` | Zustand | Minimal store |
-| `apps/with-jotai` | Jotai | Atomic / bottom-up |
-| `apps/with-xstate` | XState | State machines |
-| `apps/with-tanstack-query` | TanStack Query | Server state |
+| App                        | Library        | Paradigm              |
+| -------------------------- | -------------- | --------------------- |
+| `apps/with-redux-toolkit`  | Redux Toolkit  | Flux / unidirectional |
+| `apps/with-zustand`        | Zustand        | Minimal store         |
+| `apps/with-jotai`          | Jotai          | Atomic / bottom-up    |
+| `apps/with-xstate`         | XState         | State machines        |
+| `apps/with-tanstack-query` | TanStack Query | Server state          |
 
 ### Phase 2 — GraphQL Client Comparison (future)
 
@@ -29,15 +29,15 @@ Apollo Client vs URQL, reusing the same Pokémon domain through the [unofficial 
 
 ## Tech Stack
 
-| Tool | Version | Role |
-|------|---------|------|
-| Node.js | 22 LTS | Runtime |
-| pnpm | 9.15.9 | Package manager |
-| Turborepo | 2.9.3 | Monorepo task runner |
-| TypeScript | 6.x | Language |
-| React | 19.x (planned) | UI framework |
-| Vite | (planned) | Bundler / dev server |
-| Prettier | 3.x | Code formatter |
+| Tool       | Version        | Role                 |
+| ---------- | -------------- | -------------------- |
+| Node.js    | 22 LTS         | Runtime              |
+| pnpm       | 9.15.9         | Package manager      |
+| Turborepo  | 2.9.3          | Monorepo task runner |
+| TypeScript | 6.x            | Language             |
+| React      | 19.x (planned) | UI framework         |
+| Vite       | (planned)      | Bundler / dev server |
+| Prettier   | 3.x            | Code formatter       |
 
 ---
 
