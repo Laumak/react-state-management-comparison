@@ -37,7 +37,7 @@ Apollo Client vs URQL, reusing the same Pokémon domain through the [unofficial 
 | TypeScript | 6.x            | Language             |
 | React      | 19.x (planned) | UI framework         |
 | Vite       | (planned)      | Bundler / dev server |
-| Prettier   | 3.x            | Code formatter       |
+| oxfmt      | 0.43.x         | Code formatter       |
 
 ---
 
@@ -92,9 +92,9 @@ Apollo Client vs URQL, reusing the same Pokémon domain through the [unofficial 
 
 ### Formatting
 
-- Prettier is the repo formatter — run `pnpm format` to fix, `pnpm format:check` to verify.
-- Prettier config lives in `.prettierrc.json` at the repo root.
-- Do not manually format code; let Prettier handle it.
+- oxfmt (Oxc formatter) is the repo formatter — run `pnpm format` to fix, `pnpm format:check` to verify.
+- oxfmt config lives in `.oxfmtrc.json` at the repo root.
+- Do not manually format code; let oxfmt handle it.
 
 ### README / Documentation
 
@@ -116,6 +116,6 @@ pnpm dev              # Start all apps in dev mode (via Turborepo)
 pnpm build            # Build all apps (via Turborepo)
 pnpm lint             # Lint all packages (via Turborepo)
 pnpm typecheck        # Type-check all packages (via Turborepo)
-pnpm format           # Format all files with Prettier
+pnpm format           # Format all files with oxfmt
 pnpm format:check     # Check formatting without writing changes
 ```
