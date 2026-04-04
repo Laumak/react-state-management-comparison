@@ -4,32 +4,16 @@ node_modules
 
 # Build outputs
 dist
-build
-out
 
 # Turborepo
 .turbo
 
-# Environment
-.env.local
-.env.*.local
-
 # Logs
-*.log
-npm-debug.log*
-pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*.log*
 
 # Editor / OS
 .DS_Store
 .vscode/settings.json
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-Thumbs.db
 
 # TypeScript
 *.tsbuildinfo

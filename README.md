@@ -52,11 +52,11 @@ This exercises loading/error states, caching behaviour, and how each library han
 ```
 /
 ├── apps/
-│   ├── with-redux-toolkit/   # Todo + Pokémon with Redux Toolkit
-│   ├── with-zustand/         # Todo + Pokémon with Zustand
-│   ├── with-jotai/           # Todo + Pokémon with Jotai
-│   ├── with-xstate/          # Todo + Pokémon with XState
-│   └── with-tanstack-query/  # Todo + Pokémon with TanStack Query
+│   ├── with-redux-toolkit/   # Todo list & Pokédex with Redux Toolkit
+│   ├── with-zustand/         # Todo list & Pokédex with Zustand
+│   ├── with-jotai/           # Todo list & Pokédex with Jotai
+│   ├── with-xstate/          # Todo list & Pokédex with XState
+│   └── with-tanstack-query/  # Todo list & Pokédex with TanStack Query
 ├── packages/
 │   ├── ui/                   # Shared React UI components
 │   ├── mock-api/             # PokéAPI wrappers & shared fetch helpers
@@ -71,7 +71,7 @@ This exercises loading/error states, caching behaviour, and how each library han
 | Package | Description |
 |---------|-------------|
 | `packages/ui` | Shared, unstyled (or lightly styled) React components used by all apps — e.g. `TodoItem`, `PokemonCard`, layout primitives |
-| `packages/mock-api` | Typed wrappers around the PokéAPI REST endpoints plus shared TypeScript interfaces (`Pokemon`, `Todo`, etc.) |
+| `packages/mock-api` | Typed fetch helpers for the real [PokéAPI](https://pokeapi.co/) REST endpoints, plus shared TypeScript interfaces (`Pokemon`, `Todo`, etc.) |
 | `packages/tsconfig` | Shared `tsconfig` base files (`base.json`, `react.json`) extended by every app and package |
 
 ---
@@ -80,14 +80,16 @@ This exercises loading/error states, caching behaviour, and how each library han
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) ≥ 18
-- [pnpm](https://pnpm.io/) ≥ 9 — install with `npm install -g pnpm`
+- [Node.js](https://nodejs.org/) 22 LTS
+- [pnpm](https://pnpm.io/) 9.15.9 — install with `npm install -g pnpm@9.15.9`
 
 ### Install
 
 ```bash
 pnpm install
 ```
+
+> All workspace packages are installed in one go by pnpm's workspace support. The `pnpm dev`, `pnpm build`, `pnpm lint`, and `pnpm typecheck` commands below are defined as root scripts that delegate to Turborepo (`turbo run <task>`). Turborepo handles task ordering, parallelism, and caching across the workspace; pnpm itself is only the package manager.
 
 ### Run all apps in development mode
 
