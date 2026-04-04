@@ -1,0 +1,11 @@
+{
+  "name": "@repo/with-redux-toolkit",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo \"TODO: add dev script\"",
+    "build": "echo \"TODO: add build script\"",
+    "lint": "echo \"TODO: add lint script\"",
+    "typecheck": "echo \"TODO: add typecheck script\""
+  }
+}
