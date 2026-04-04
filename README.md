@@ -80,7 +80,7 @@ This exercises loading/error states, caching behaviour, and how each library han
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) 22 LTS
+- [Node.js](https://nodejs.org/) 22 LTS — a `.nvmrc` is included; if you use [nvm](https://github.com/nvm-sh/nvm) run `nvm install` then `nvm use` from the repo root
 - [pnpm](https://pnpm.io/) 9.15.9 — install with `npm install -g pnpm@9.15.9`
 
 ### Install
