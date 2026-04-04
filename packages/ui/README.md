@@ -2,7 +2,8 @@
 
 Shared React UI components used by all apps in this monorepo.
 
-The goal of this package is to ensure every app renders exactly the same interface so that comparisons focus on the state management integration, not on UI differences.
+The goal of this package is to ensure every app renders exactly the same interface so that
+comparisons focus on the state management integration, not on UI differences.
 
 ## What belongs here
 
@@ -15,4 +16,5 @@ The goal of this package is to ensure every app renders exactly the same interfa
 
 ## Status
 
-> 🚧 **Not yet implemented.** This folder is a placeholder — components will be added once the app scaffolds are in place.
+> 🚧 **Not yet implemented.** This folder is a placeholder — components will be added once the app
+> scaffolds are in place.

@@ -1,8 +1,10 @@
 # @repo/mock-api
 
-Shared typed wrappers around the [PokéAPI](https://pokeapi.co/) REST endpoints, plus shared TypeScript interfaces used across all apps.
+Shared typed wrappers around the [PokéAPI](https://pokeapi.co/) REST endpoints, plus shared
+TypeScript interfaces used across all apps.
 
-Centralising the fetch logic here means every app calls the same functions and works with the same types — the only difference is _how_ each app manages the resulting state.
+Centralising the fetch logic here means every app calls the same functions and works with the same
+types — the only difference is _how_ each app manages the resulting state.
 
 ## What belongs here
 
@@ -20,4 +22,5 @@ Centralising the fetch logic here means every app calls the same functions and w
 
 ## Status
 
-> 🚧 **Not yet implemented.** This folder is a placeholder — types and helpers will be added once the app scaffolds are in place.
+> 🚧 **Not yet implemented.** This folder is a placeholder — types and helpers will be added once
+> the app scaffolds are in place.

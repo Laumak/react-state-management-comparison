@@ -1,8 +1,10 @@
 # with-zustand
 
-This app implements the state management comparison scenarios using **[Zustand](https://zustand-demo.pmnd.rs/)**.
+This app implements the state management comparison scenarios using
+**[Zustand](https://zustand-demo.pmnd.rs/)**.
 
-Zustand is a small, fast, and scalable state management library. It uses simplified flux principles and has a minimal API based on hooks — no providers, no boilerplate.
+Zustand is a small, fast, and scalable state management library. It uses simplified flux principles
+and has a minimal API based on hooks — no providers, no boilerplate.
 
 ## Scenarios
 
@@ -12,7 +14,8 @@ A classic to-do list (add, complete, delete, filter todos) using a Zustand store
 
 ### Async / Server State — PokéAPI
 
-Fetching Pokémon data from the [PokéAPI](https://pokeapi.co/) with async actions inside the Zustand store, combined with loading/error state tracked alongside the data.
+Fetching Pokémon data from the [PokéAPI](https://pokeapi.co/) with async actions inside the Zustand
+store, combined with loading/error state tracked alongside the data.
 
 ## Key concepts explored
 
@@ -23,4 +26,5 @@ Fetching Pokémon data from the [PokéAPI](https://pokeapi.co/) with async actio
 
 ## Status
 
-> 🚧 **Not yet implemented.** This folder is a placeholder — implementation will be added in a follow-up PR.
+> 🚧 **Not yet implemented.** This folder is a placeholder — implementation will be added in a
+> follow-up PR.
