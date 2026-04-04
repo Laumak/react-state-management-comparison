@@ -1,12 +1,14 @@
 # Copilot Instructions
 
-This file gives AI coding agents (GitHub Copilot, etc.) the context they need to contribute effectively to this repository.
+This file gives AI coding agents (GitHub Copilot, etc.) the context they need to contribute
+effectively to this repository.
 
 ---
 
 ## What We're Building
 
-A **pnpm + Turborepo monorepo** that compares popular React state management libraries side-by-side. Every app implements the **same two scenarios** so the libraries can be evaluated on equal footing:
+A **pnpm + Turborepo monorepo** that compares popular React state management libraries side-by-side.
+Every app implements the **same two scenarios** so the libraries can be evaluated on equal footing:
 
 1. **Todo List** — local/client state (add, complete, delete, filter todos)
 2. **Pokédex** — async/server state fetched from the real [PokéAPI](https://pokeapi.co/)
@@ -23,7 +25,9 @@ A **pnpm + Turborepo monorepo** that compares popular React state management lib
 
 ### Phase 2 — GraphQL Client Comparison (future)
 
-Apollo Client vs URQL, reusing the same Pokémon domain through the [unofficial GraphQL PokéAPI](https://github.com/mazipan/graphql-pokeapi). Phase 2 apps live in their own `apps/` sub-folders and are kept separate from Phase 1.
+Apollo Client vs URQL, reusing the same Pokémon domain through the
+[unofficial GraphQL PokéAPI](https://github.com/mazipan/graphql-pokeapi). Phase 2 apps live in their
+own `apps/` sub-folders and are kept separate from Phase 1.
 
 ---
 
@@ -75,24 +79,29 @@ Apollo Client vs URQL, reusing the same Pokémon domain through the [unofficial 
 ### Dependencies
 
 - Always pin **exact versions** — no `^` or `~` in `package.json`.
-- Check the [GitHub Advisory Database](https://github.com/advisories) before adding a new dependency.
+- Check the [GitHub Advisory Database](https://github.com/advisories) before adding a new
+  dependency.
 - Each app installs only the dependencies it actually needs. Shared logic belongs in `packages/`.
 
 ### Configuration Files
 
 - Keep config files **lean and relevant**. Do not add options speculatively ("just in case").
-- **Document every non-obvious option** with an inline comment. TypeScript's JSONC parser allows `//` comments inside `tsconfig*.json` files.
-- `turbo.json` must remain strict JSON (no comments). Explain Turborepo behaviour in the README instead.
+- **Document every non-obvious option** with an inline comment. TypeScript's JSONC parser allows
+  `//` comments inside `tsconfig*.json` files.
+- `turbo.json` must remain strict JSON (no comments). Explain Turborepo behaviour in the README
+  instead.
 
 ### TypeScript
 
 - All TypeScript targets `ES2020` / `ESNext` and uses `"moduleResolution": "bundler"`.
-- Shared base config lives in `packages/tsconfig/base.json`; React-specific overrides in `packages/tsconfig/react.json`.
+- Shared base config lives in `packages/tsconfig/base.json`; React-specific overrides in
+  `packages/tsconfig/react.json`.
 - `strict: true` is non-negotiable.
 
 ### Formatting
 
-- oxfmt (Oxc formatter) is the repo formatter — run `pnpm format` to fix, `pnpm format:check` to verify.
+- oxfmt (Oxc formatter) is the repo formatter — run `pnpm format` to fix, `pnpm format:check` to
+  verify.
 - oxfmt config lives in `.oxfmtrc.json` at the repo root.
 - Do not manually format code; let oxfmt handle it.
 
@@ -103,7 +112,8 @@ Apollo Client vs URQL, reusing the same Pokémon domain through the [unofficial 
 
 ### Git
 
-- Write clear, lower-case conventional commit messages: `feat:`, `fix:`, `chore:`, `docs:`, `refactor:`.
+- Write clear, lower-case conventional commit messages: `feat:`, `fix:`, `chore:`, `docs:`,
+  `refactor:`.
 - Do not commit lock files, `node_modules`, `dist`, `.turbo`, or other build artefacts.
 
 ---
