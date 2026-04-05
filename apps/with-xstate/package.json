@@ -3,9 +3,23 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "echo \"TODO: add dev script\"",
-    "build": "echo \"TODO: add build script\"",
-    "lint": "echo \"TODO: add lint script\"",
-    "typecheck": "echo \"TODO: add typecheck script\""
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/mock-api": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-router-dom": "7.14.0"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.1",
+    "typescript": "6.0.2",
+    "vite": "8.0.3"
   }
 }

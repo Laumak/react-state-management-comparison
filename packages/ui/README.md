@@ -16,5 +16,5 @@ comparisons focus on the state management integration, not on UI differences.
 
 ## Status
 
-> 🚧 **Not yet implemented.** This folder is a placeholder — components will be added once the app
-> scaffolds are in place.
+✅ **Implemented.** Exports `TodoInput`, `TodoItem`, `TodoList`, `PokemonCard`, and `PokemonList`
+components.
