@@ -1,0 +1,7 @@
+{
+  "extends": "@repo/tsconfig/react.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": ".turbo/tsconfig.tsbuildinfo"
+  },
+  "include": ["src", "vite.config.ts"]
+}
