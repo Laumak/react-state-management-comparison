@@ -10,22 +10,20 @@ This file captures the intended PR-by-PR rollout so the project plan is tracked 
 - Ensure Turbo pipeline compatibility
 - Keep feature implementation out of scope
 
-## PR 2: Reference implementation foundation (single app)
+## PR 2: Reference implementation foundation (single app) ✅
 
-- Pick one app as reference (suggest `with-redux-toolkit`)
-- Implement minimal runnable shell for Todo + Pokédex routes/screens
-- Validate integration with shared packages (`@repo/ui`, `@repo/mock-api`) at a basic level
+- Implemented `with-redux-toolkit` as the reference app (Todo list + Pokédex)
+- Validated integration with `@repo/ui` and `@repo/mock-api`
 
-## PR 3: Shared package hardening
+## PR 3: Shared package hardening ✅
 
-- Finalize `packages/mock-api` typed contracts and fetch helpers
-- Finalize `packages/ui` core shared presentational components
-- Keep behavior generic and library-agnostic
+- Implemented `packages/mock-api` — typed interfaces and PokéAPI fetch helpers
+- Implemented `packages/ui` — presentational components (TodoInput, TodoItem, TodoList, PokemonCard,
+  PokemonList)
 
-## PR 4–7: Per-library app implementations
+## PR 4–7: Per-library app implementations ✅
 
-- Port full scenarios app-by-app (Zustand, Jotai, XState, TanStack Query)
-- Maintain strict parity of UX/behavior between apps
+- Implemented Zustand, Jotai, XState, and TanStack Query apps in full parity with the reference
 
 ## PR 8: Comparison polish + docs
 
