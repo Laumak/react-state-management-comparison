@@ -1,0 +1,14 @@
+# Normalize all text files to LF in the repository and on checkout.
+# This ensures consistent line endings across Windows, macOS, and Linux
+# regardless of each contributor's local core.autocrlf setting.
+* text=auto eol=lf
+
+# Explicitly mark binary files to prevent corruption.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary

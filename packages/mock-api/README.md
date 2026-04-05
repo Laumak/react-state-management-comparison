@@ -22,5 +22,5 @@ types — the only difference is _how_ each app manages the resulting state.
 
 ## Status
 
-> 🚧 **Not yet implemented.** This folder is a placeholder — types and helpers will be added once
-> the app scaffolds are in place.
+✅ **Implemented.** Exports `Todo`, `Pokemon`, `PokemonListItem`, `PokemonListResponse` interfaces,
+plus `fetchPokemonList` and `fetchPokemon` helpers.

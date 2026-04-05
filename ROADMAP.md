@@ -2,32 +2,35 @@
 
 This file captures the intended PR-by-PR rollout so the project plan is tracked in-repo.
 
-## PR 1 (this PR): Common Vite + React baseline only
+## PR 1 — Common Vite + React baseline ✅
 
-- Set up shared app scaffolding conventions
-- Wire shared TS config usage for React apps
-- Add/align app scripts (`dev`, `build`, `lint`, `typecheck`) consistently
-- Ensure Turbo pipeline compatibility
-- Keep feature implementation out of scope
+- Shared packages: `@repo/mock-api` types + PokéAPI fetch helpers, `@repo/ui` presentational
+  components
+- All 5 app scaffolds with Vite + React + TypeScript + react-router-dom shell
+- Stub pages (no state management logic yet)
 
-## PR 2: Reference implementation foundation (single app)
+## PR 2 — Reference implementation: Redux Toolkit
 
-- Pick one app as reference (suggest `with-redux-toolkit`)
-- Implement minimal runnable shell for Todo + Pokédex routes/screens
-- Validate integration with shared packages (`@repo/ui`, `@repo/mock-api`) at a basic level
+- Implement Todo + Pokédex scenarios in `with-redux-toolkit`
+- `createSlice`, `createAsyncThunk`, `configureStore`
 
-## PR 3: Shared package hardening
+## PR 3 — Zustand implementation
 
-- Finalize `packages/mock-api` typed contracts and fetch helpers
-- Finalize `packages/ui` core shared presentational components
-- Keep behavior generic and library-agnostic
+- Implement Todo + Pokédex scenarios in `with-zustand`
 
-## PR 4–7: Per-library app implementations
+## PR 4 — Jotai implementation
 
-- Port full scenarios app-by-app (Zustand, Jotai, XState, TanStack Query)
-- Maintain strict parity of UX/behavior between apps
+- Implement Todo + Pokédex scenarios in `with-jotai`
 
-## PR 8: Comparison polish + docs
+## PR 5 — XState implementation
+
+- Implement Todo + Pokédex scenarios in `with-xstate`
+
+## PR 6 — TanStack Query implementation
+
+- Implement Todo + Pokédex scenarios in `with-tanstack-query`
+
+## PR 7 — Comparison polish + docs
 
 - Cross-app parity pass, cleanup, and consistency checks
 - Update root and package README guidance for running and comparing apps

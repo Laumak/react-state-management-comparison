@@ -2,8 +2,20 @@
   "name": "@repo/mock-api",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
   "scripts": {
-    "lint": "echo \"TODO: add lint script\"",
-    "typecheck": "echo \"TODO: add typecheck script\""
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "typescript": "6.0.2"
   }
 }
