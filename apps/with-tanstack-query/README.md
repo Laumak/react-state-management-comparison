@@ -29,5 +29,5 @@ loading/error states.
 
 ## Status
 
-> 🚧 **Not yet implemented.** This folder is a placeholder — implementation will be added in a
-> follow-up PR.
+✅ **Implemented.** Run `pnpm dev --filter @repo/with-tanstack-query` from the repo root to start
+the dev server.
