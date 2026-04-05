@@ -26,5 +26,5 @@ store, combined with loading/error state tracked alongside the data.
 
 ## Status
 
-> 🚧 **Not yet implemented.** This folder is a placeholder — implementation will be added in a
-> follow-up PR.
+✅ **Implemented.** Run `pnpm dev --filter @repo/with-zustand` from the repo root to start the dev
+server.
